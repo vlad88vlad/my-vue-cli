@@ -58,10 +58,7 @@ module.exports = {
       return element ? element.offsetHeight : 0
     },
 
-    /**
-     * The currently viewable portion of the dropdownMenu.
-     * @returns {{top: (string|*|number), bottom: *}}
-     */
+
     viewport() {
       return {
         top: this.$refs.dropdownMenu ? this.$refs.dropdownMenu.scrollTop: 0,
