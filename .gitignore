@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+.DS_Store
+template/node_modules/
+template/dist/
+npm-debug.log
+template/package-lock.json
+.idea/
