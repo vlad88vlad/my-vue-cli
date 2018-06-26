@@ -1,8 +1,12 @@
 <template>
-    <div>
+    <div class="wrapper">
 
-       home app
-        <router-view></router-view>
+        <div class="content">
+            <header > My vue cli</header>
+            <router-view></router-view>
+        </div>
+        <div class="footer"></div>
+
     </div>
 </template>
 
@@ -26,11 +30,7 @@
         },
         mounted() {
         },
-        methods: {
-
-
-
-        },
+        methods: {},
         created() {
 
         }
@@ -40,5 +40,33 @@
 </script>
 
 <style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        height: 60px;
+        width: 100%;
+        background: #1453ff;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        color: #fff;
+        font-size: 22px;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 
+    .content {
+        flex: 1 0 auto;
+    }
+
+    .footer {
+        flex: 0 0 auto;
+    }
 </style>

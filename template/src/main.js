@@ -5,11 +5,15 @@ import App from './App'
 import router from './router'
 
 import VueMaterial from 'vue-material'
+import 'vue-material/dist/theme/default.css'
 
 import './assets/css/fonts-matirial.css'
 import './assets/css/roboto.css'
+// import 'vue-material/dist/vue-material.css'
 import 'vue-material/dist/vue-material.css'
+
 import './assets/css/css.css'
+// import Chart from './components/customComponents/vuestic-chart/VuesticChart.vue'
 
 import VueCookies from 'vue-cookies'
 
@@ -22,6 +26,7 @@ Vue.use(vueTopprogress)
 Vue.use(Autocomplete)
 Vue.use(VueMaterial);
 Vue.use(VueCookies)
+// Vue.component(Chart.name, Chart)
 
 
 // Vue.config.productionTip = false;

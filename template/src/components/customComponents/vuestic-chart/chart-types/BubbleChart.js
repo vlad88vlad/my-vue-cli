@@ -1,7 +1,9 @@
 import { Bubble } from 'vue-chartjs'
 
-export default Bubble.extend({
-  props: ['data', 'options'],
+export default ({
+    extends: Bubble,
+
+    props: ['data', 'options'],
 
   data () {
     return {
@@ -10,6 +12,17 @@ export default Bubble.extend({
       }
     }
   },
+    mounted () {
+        let options ={
+            labels: ['North America', 'South America', 'Australia'],
+            datasets: [{
+                label: 'Population (millions)',
+                backgroundColor: ['#e3c74d', '#c02151', '#1453ff'],
+                data: [3000, 6000, 1500]
+            }]
+        };
+        this.renderChart(this.data, options)
+    }
 
 
 })

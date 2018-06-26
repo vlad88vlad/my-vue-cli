@@ -1,7 +1,9 @@
 import {Line} from 'vue-chartjs'
 // import DefaultOptions from '../DefaultOptions'
 
-export default Line.extend({
+export default ({
+    extends: Line,
+
     props: ['data', 'options'],
 
     data() {

@@ -1,8 +1,10 @@
 import { Doughnut } from 'vue-chartjs'
 // import DefaultOptions from '../DefaultOptions'
 
-export default Doughnut.extend({
-  props: ['data', 'options'],
+export default ({
+    extends: Doughnut,
+
+    props: ['data', 'options'],
 
   data () {
     return {

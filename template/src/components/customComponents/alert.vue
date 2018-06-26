@@ -1,7 +1,7 @@
 <template>
     <transition name="fade">
         <div class='vuestic-alert alert' :class="alertClass" v-if="!hidden">
-            <slot></slot>
+            <slot ></slot>
             <i class="fa fa-close alert-close" v-if="withCloseBtn" @click="hide()"></i>
         </div>
     </transition>
@@ -48,8 +48,9 @@
 <style scoped>
 
     .alert {
-        position: absolute;
+        position: fixed;
         top: 2%;
+        opacity:0.8;
         right: 2%;
         width: 250px;
         padding: 0.75rem 1.25rem;
