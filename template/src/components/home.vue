@@ -10,10 +10,11 @@
 
         <div class="container">
 
-
-            <alert type="success" :withCloseBtn="true" v-if="showAlert">
+            <alert v-for="(alert,index) in alerts" :style="'top:'+ ((index+1) *6-4) +'%'" :type="alert.type"
+                   :withCloseBtn="true"
+            >
                 <md-icon class="md-success">check</md-icon>
-                <span> test </span>
+                <span> {{alert.text}} </span>
             </alert>
 
 
@@ -73,6 +74,7 @@
                 post: false,
                 showAlert: false,
                 showChart: false,
+                alerts: [],
                 donutChartData: {
                     labels: ['html', 'css', 'js'],
                     datasets: [{
@@ -122,15 +124,31 @@
             },
             callAlert() {
                 this.showAlert = true;
-                setTimeout(() => {
-                    this.showAlert = false
+//
+                let temp =Math.floor(Math.random() * 1000);
 
-                }, 1500)
+                this.alerts.push({
+                    showAlert: true,
+                    text: `success ${temp}`,
+                });
+                let length = this.alerts.length;
+                if(temp <250) {
+                    this.alerts[length - 1].type ='success';
+                }else if(temp<500){
+                    this.alerts[length - 1].type ='warning';
+                }else if(temp<750){
+                    this.alerts[length - 1].type ='danger';
+                }else{
+                    this.alerts[length - 1].type ='info';
+                }
+                setTimeout(() => {
+                    this.alerts.splice(0, 1)
+
+                }, 5000)
             }
 
         },
         mounted() {
-
         },
         computed: {},
         watch: {},

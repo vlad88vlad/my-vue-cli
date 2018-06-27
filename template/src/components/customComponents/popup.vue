@@ -81,7 +81,9 @@
 
 
     .md-dialog {
-        background-color: #fff
+        background-color: #fff;
+        display: block;
+
     }
 
     .md-dialog-container {
