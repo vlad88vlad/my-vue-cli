@@ -10,7 +10,7 @@
     "build": " node build/build.js ",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
-    "test": "npm run unit && npm run e2e",
+    "test": "node build/test-server.js",
     "test_api": "node build/build.js \n newman run https://www.getpostman.com/collections/bc2cf4d12a6c6bef7cb4 "
   },
   "dependencies": {
