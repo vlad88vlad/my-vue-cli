@@ -2,32 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05ff3684-a546-4331-b5f2-3d8bba6626d6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/template/build/test-server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/custom-components/material-input.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/components/custom-components/top-progress.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/custom-directive/directives.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/template/src/custom-directive/directives.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/template/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/customComponents/alert.vue" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/custom-components/alert.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/customComponents/popup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/custom-components/popup.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/customComponents/vuestic-chart/DefaultOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/custom-components/vuestic-chart/DefaultOptions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/customComponents/vuestic-chart/VuesticChart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/custom-components/vuestic-chart/VuesticChart.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/customComponents/vuestic-chart/chart-types/BubbleChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/custom-components/vuestic-chart/chart-types/BubbleChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/customComponents/vuestic-chart/chart-types/DonutChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/custom-components/vuestic-chart/chart-types/DonutChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/customComponents/vuestic-chart/chart-types/HorizontalBarChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/custom-components/vuestic-chart/chart-types/HorizontalBarChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/customComponents/vuestic-chart/chart-types/LineChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/custom-components/vuestic-chart/chart-types/LineChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/customComponents/vuestic-chart/chart-types/PieChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/custom-components/vuestic-chart/chart-types/PieChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/customComponents/vuestic-chart/chart-types/VerticalBarChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/custom-components/vuestic-chart/chart-types/VerticalBarChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/marked/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/mixins/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/mixins/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/mixins/pointerScroll.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/mixins/typeAheadPointer.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/css/app.f3031ff46cbad55a5eef519e07cb3c03.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/css/app.f3031ff46cbad55a5eef519e07cb3c03.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/js/app.653fd8432636f7fa012d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/js/app.653fd8432636f7fa012d.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/js/manifest.30165d0c141209fb0aef.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/js/manifest.30165d0c141209fb0aef.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/js/vendor.b3aae85602663f74fa2d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/static/js/vendor.b3aae85602663f74fa2d.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,7 +35,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="js" value="4" />
+          <entry key="gitignore" value="2" />
+          <entry key="js" value="5" />
           <entry key="md" value="2" />
           <entry key="vue" value="3" />
         </counts>
@@ -59,7 +44,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="JavaScript" value="4" />
+          <entry key="Git file" value="2" />
+          <entry key="JavaScript" value="5" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Vue.js" value="3" />
         </counts>
@@ -107,18 +93,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/src/custom-directive/directives.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/src/components/custom-components/popup-event.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3107">
@@ -128,21 +102,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="19" lean-forward="true" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/docs/static/js/app.653fd8432636f7fa012d.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="19" selection-end-line="14" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/build/test-server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -158,16 +151,7 @@
         <entry file="file://$PROJECT_DIR$/template/build/dev-server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/src/App.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <caret line="7" column="23" selection-start-line="7" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -218,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/template/src/mixins/pointerScroll.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/template/index.html" />
@@ -241,6 +224,7 @@
         <option value="$PROJECT_DIR$/template/src/components/home.vue" />
         <option value="$PROJECT_DIR$/template/package.json" />
         <option value="$PROJECT_DIR$/template/build/test-server.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -280,7 +264,18 @@
             <path>
               <item name="my-vue-cli" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-vue-cli" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-vue-cli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-vue-cli" type="462c0819:PsiDirectoryNode" />
               <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-vue-cli" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-vue-cli" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -298,6 +293,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/template/build" />
       <recent name="$PROJECT_DIR$/template/src/components/custom-components" />
       <recent name="$PROJECT_DIR$/template/src/components/customComponents" />
@@ -334,7 +330,7 @@
       <workItem from="1530086906338" duration="600000" />
       <workItem from="1530101831627" duration="6233000" />
       <workItem from="1535468301742" duration="8454000" />
-      <workItem from="1535527585810" duration="7712000" />
+      <workItem from="1535527585810" duration="8029000" />
     </task>
     <task id="LOCAL-00001" summary="template">
       <created>1523704429986</created>
@@ -361,7 +357,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54659000" />
+    <option name="totallyTimeSpent" value="54976000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="109" y="23" width="1255" height="772" extended-state="0" />
@@ -410,9 +406,6 @@
     <entry file="file://$PROJECT_DIR$/src/App.vue" />
     <entry file="file://$PROJECT_DIR$/src/components/home.vue" />
     <entry file="file://$PROJECT_DIR$/template/src/mixins/pointerScroll.js" />
-    <entry file="file://$PROJECT_DIR$/template/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file:///private/var/folders/n0/09xjfq5j4zs9yz8x2g_jcfzh0000gn/T/fz3temp-2/development.log" />
     <entry file="file://$PROJECT_DIR$/template/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -511,13 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/src/components/custom-components/popup.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
@@ -586,7 +572,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="19" lean-forward="true" selection-end-line="14" selection-end-column="22" />
+          <caret line="14" column="19" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -607,7 +593,7 @@
     <entry file="file://$PROJECT_DIR$/template/build/dev-server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+          <caret line="7" column="23" selection-start-line="7" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -617,6 +603,19 @@
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/static/js/app.653fd8432636f7fa012d.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

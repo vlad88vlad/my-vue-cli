@@ -12,4 +12,6 @@
  npm run dev
 ```
 
+[Demo](https://vlad88vlad.github.io/my-vue-cli/#/)
+
 Author Vlad Voloshchuk
