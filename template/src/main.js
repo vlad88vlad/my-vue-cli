@@ -8,6 +8,7 @@ import VueMaterial from 'vue-material'
 import 'vue-material/dist/theme/default.css'
 
 import './assets/css/fonts-matirial.css'
+import './assets/css/material-cards.css'
 import './assets/css/roboto.css'
 import 'vue-material/dist/vue-material.css'
 

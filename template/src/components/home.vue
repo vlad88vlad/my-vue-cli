@@ -64,6 +64,20 @@
 
             </popup-event>
         </div>
+
+        <h2>Material Cards</h2>
+
+        <div class="card-holder">
+            <div class="card card-1">
+                card-1 with hover
+            </div>
+            <div class="card card-2">
+                card-2
+            </div>
+            <div class="card card-3">
+                card-3
+            </div>
+        </div>
         <div class="container">
 
             <alert v-for="(alert,index) in alerts" :style="'top:'+ (((index)) *50) +'px'" :type="alert.type"
@@ -311,6 +325,19 @@
 </script>
 
 <style scoped>
+    .card-holder{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+
+    }
+    .card{
+        max-width: 300px;
+        display: inherit;
+        align-items: center;
+        justify-content: inherit;
+        flex: 1;
+    }
     .clock {
         position: absolute;
         top: 0;
