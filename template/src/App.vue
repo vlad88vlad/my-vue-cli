@@ -1,12 +1,10 @@
 <template>
     <div class="wrapper">
-
         <div class="content">
-            <header > My vue cli</header>
+            <header> My vue cli</header>
             <router-view></router-view>
         </div>
         <div class="footer"></div>
-
     </div>
 </template>
 
@@ -23,21 +21,17 @@
         name: 'app',
         router,
         data() {
-            return {
-                title: 'Home',
-            }
+            return {}
         },
         mounted() {
         },
         methods: {},
         created() {
-
         }
 
 
     }
 </script>
-
 <style>
 
     :root {
@@ -61,7 +55,8 @@
         margin: 0;
         padding: 0;
     }
-    header{
+
+    header {
         height: 60px;
         width: 100%;
         background: #1453ff;
@@ -71,10 +66,12 @@
         color: #fff;
         font-size: 22px;
     }
-    .md-success{
-        background-color:#73AF55 !important;
+
+    .md-success {
+        background-color: #73AF55 !important;
         color: #fff !important;
     }
+
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -84,13 +81,16 @@
     .content {
         flex: 1 0 auto;
     }
-    h2{
+
+    h2 {
         text-align: center;
         color: #343434;
     }
+
     .footer {
         flex: 0 0 auto;
     }
+
     [data-tooltip] {
         position: relative;
         z-index: 2;

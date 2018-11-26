@@ -1,9 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/home'
-import VueCookies from 'vue-cookies'
 
-Vue.use(VueCookies)
 
 Vue.use(Router)
 

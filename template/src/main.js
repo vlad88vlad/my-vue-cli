@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueResource from 'vue-resource';
+import VueLocalStorage from 'vue-localstorage'
 
 import App from './App'
 import router from './router'
@@ -15,17 +16,12 @@ import 'vue-material/dist/vue-material.css'
 
 import './assets/css/css.css'
 
-import VueCookies from 'vue-cookies'
-import Autocomplete from 'v-autocomplete'
-import vueTopprogress from 'vue-top-progress'
-import './custom-directive/directives.js'
+import './directives/directives.js'
 
-Vue.use(vueTopprogress)
-Vue.use(Autocomplete)
 Vue.use(VueMaterial);
-Vue.use(VueCookies)
 
 Vue.use(VueResource);
+Vue.use(VueLocalStorage);
 
 new Vue({
 

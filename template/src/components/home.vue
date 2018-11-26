@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div oncontextmenu="return false">
         <top-progress :progress="loader.progress" :bar-color="loader.color" v-if="loader.show">
         </top-progress>
 
@@ -10,12 +10,13 @@
 
 
         <h2>Material Input</h2>
-
         <div class="test-input">
+
             <div>
+
                 <material-input type="text" v-model="test" :isValid="testValid" style="width: 300px"
                                 :validMsg="testValidMsg" label="text"/>
-                <md-button class="md-raised md-primary" @click="testInput"> test it</md-button>
+                <md-button class="md-raised md-primary" @click="testInput()"> submit</md-button>
             </div>
             <div class="test-info">
                 <div>
@@ -47,7 +48,8 @@
 
         <div style="text-align: center">
             <md-button class="md-raised md-primary" @click="callAlert">call</md-button>
-            <md-button class="md-raised md-primary" @click="callAlert" v-disable="true">call</md-button>
+            <md-button class="md-raised md-primary" @click="callAlert"
+                       v-disable="{disable:true,text:'test test test test test test test'}">call</md-button>
 
         </div>
 
@@ -95,7 +97,6 @@
             </template>
 
         </div>
-
         <transition name="fade">
             <popup @modal="modalClose" v-show="popupShow" :active="popupShow"></popup>
         </transition>
@@ -121,20 +122,32 @@
             </md-speed-dial-content>
         </md-speed-dial>
 
+
     </div>
 </template>
 
 <script>
+    window.targetFunc = () => {
+        window.addEventListener('message', function (event) {
+            console.log(event.origin);
+            if (event.origin === 'http://localhost:8008') {
+                document.getElementById('content').innerHTML = event.data;
+                console.log(event.data);
+            }
+        });
+        let a = () => {
+            console.log('asdf')
+        }
+    };
 
-
-    import Popup from './custom-components/popup.vue'
-    import alert from './custom-components/alert.vue'
-    import TopProgress from './custom-components/top-progress.vue'
-    import PopupEvent from './custom-components/popup-event.vue'
-    import MaterialInput from './custom-components/material-input.vue'
-    import DonutChart from './custom-components/vuestic-chart/chart-types/DonutChart'
-    import LineChart from './custom-components/vuestic-chart/chart-types/LineChart'
-    import BubbleChart from './custom-components/vuestic-chart/chart-types/BubbleChart'
+    import Popup from './ui-elements/popup.vue'
+    import alert from './ui-elements/alert.vue'
+    import TopProgress from './ui-elements/top-progress.vue'
+    import PopupEvent from './ui-elements/popup-event.vue'
+    import MaterialInput from './ui-elements/material-input.vue'
+    import DonutChart from './ui-elements/vuestic-chart/chart-types/DonutChart'
+    import LineChart from './ui-elements/vuestic-chart/chart-types/LineChart'
+    import BubbleChart from './ui-elements/vuestic-chart/chart-types/BubbleChart'
 
     export default {
 
@@ -226,6 +239,7 @@
             modalClose(evt) {
                 this.popupShow = evt;
             },
+
             progress(status) {
                 let n = 0;
                 this.loader.color = '#73AF55';
@@ -288,56 +302,68 @@
             startProgress() {
                 this.progress('start')
             },
+
             doneProgress() {
                 this.progress('done')
             },
             failProgress() {
                 this.progress('fail')
 
-            }
+            },
+            targetFunc() {
+                window.addEventListener('message', function (event) {
+                    console.log(event.origin);
+                    if (event.origin === 'http://localhost:8008') {
+                        console.log(event.data);
 
-        },
+                        // document.getElementById('content').innerHTML = event.data;
+                        console.log(event.data);
+                    }
+                }, false);
+                let a = () => {
+                    console.log('asdf')
+                }
+            },
+
+
+        }
+        ,
         mounted() {
-            let secondArrow = this.$refs.second;
-            let minutesArrow = this.$refs.minutes;
-            let hourArrow = this.$refs.hour;
-            setInterval(() => {
-                let date = new Date()
-                let second = date.getSeconds();
-                let minute = date.getMinutes();
-                let hour = date.getHours();
-                secondArrow.style.transform = `rotate(${90 + second * 6}deg)`
-                minutesArrow.style.transform = `rotate(${90 + minute * 6}deg)`
-                hourArrow.style.transform = `rotate(${90 + hour * 30}deg)`
-            }, 1000);
 
-        },
-        computed: {},
+        }
+        ,
+        computed: {}
+        ,
         watch: {
             test() {
                 this.testValid = true;
-            },
-        },
-        created() {}
+            }
+            ,
+        }
+        ,
+        created() {
+        }
 
 
     }
 </script>
 
 <style scoped>
-    .card-holder{
+    .card-holder {
         display: flex;
         justify-content: center;
         margin-bottom: 40px;
 
     }
-    .card{
+
+    .card {
         max-width: 300px;
         display: inherit;
         align-items: center;
         justify-content: inherit;
         flex: 1;
     }
+
     .clock {
         position: absolute;
         top: 0;
@@ -393,8 +419,6 @@
             transform: rotate(450deg);
         }
     }
-
-
 
     .test-input {
         width: 100%;
