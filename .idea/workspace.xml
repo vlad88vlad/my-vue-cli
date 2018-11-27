@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05ff3684-a546-4331-b5f2-3d8bba6626d6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/src/components/ui-elements/custom-select.vue" beforeDir="false" afterPath="$PROJECT_DIR$/template/src/components/ui-elements/custom-select.vue" afterDir="false" />
-    </list>
+    <list default="true" id="05ff3684-a546-4331-b5f2-3d8bba6626d6" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -57,7 +54,7 @@
           <entry key="css" value="86" />
           <entry key="gitignore" value="8" />
           <entry key="js" value="104" />
-          <entry key="vue" value="2252" />
+          <entry key="vue" value="2269" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -65,7 +62,7 @@
           <entry key="CSS" value="86" />
           <entry key="Git file" value="8" />
           <entry key="JavaScript" value="104" />
-          <entry key="Vue.js" value="2252" />
+          <entry key="Vue.js" value="2269" />
         </counts>
       </usages-collector>
     </session>
@@ -155,8 +152,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/src/components/ui-elements/custom-select.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+            <state relative-caret-position="163">
+              <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -373,7 +370,7 @@
       <workItem from="1539760958905" duration="5250000" />
       <workItem from="1539850913175" duration="2679000" />
       <workItem from="1543228701260" duration="7774000" />
-      <workItem from="1543316636856" duration="8480000" />
+      <workItem from="1543316636856" duration="8721000" />
     </task>
     <task id="LOCAL-00001" summary="template">
       <created>1523704429986</created>
@@ -400,13 +397,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81362000" />
+    <option name="totallyTimeSpent" value="81603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="136" y="24" width="1255" height="780" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959481" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959481" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Project Explorer" order="3" />
@@ -422,7 +418,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Console" order="7" />
       <window_info anchor="bottom" id="DB Execution Console" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49918962" visible="true" weight="0.44047618" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49918962" visible="true" weight="0.44047618" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008104" side_tool="true" weight="0.23065476" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -727,8 +723,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/template/src/components/ui-elements/custom-select.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        <state relative-caret-position="163">
+          <caret line="22" column="38" lean-forward="true" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
         </state>
       </provider>
     </entry>
