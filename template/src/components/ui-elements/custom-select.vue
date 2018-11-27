@@ -17,12 +17,17 @@
         </span>
 
         <div class="options">
-            <div v-if="autoComplete.length !==0">
+            <template v-if="autoComplete.length !==0">
                 <div class="option" v-for="i in autoComplete"
                      @click="setValue(item ? i[item] : i)">
-                    {{returnItem(i)}}
+                    <span v-if="item">
+                        {{i[item]}}
+                    </span>
+                    <span v-else>
+                        {{i}}
+                    </span>
                 </div>
-            </div>
+            </template>
             <div class="option" v-if="autoComplete.length ===0">
                 not found
             </div>
@@ -70,13 +75,6 @@
             }
         },
         methods: {
-            returnItem(i) {
-                if (this.item) {
-                    return i[this.item]
-                } else {
-                    return i
-                }
-            },
             remove() {
                 if (this.readonly) {
                     this.$emit('input', '');
