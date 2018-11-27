@@ -18,10 +18,10 @@
 
         <div class="options">
             <template v-if="autoComplete.length !==0">
-                <div class="option" v-for="i in autoComplete"
-                     @click="setValue(item ? i[item] : i)">
+                <div class="option" v-for="(i,index) in autoComplete"
+                     @click="setValue(item ? i[item] : i)" :key="index">
                     <span v-if="item">
-                        {{(i[item])}}
+                        {{i[item]}}
                     </span>
                     <span v-else>
                         {{i}}
