@@ -20,7 +20,7 @@
             <template v-if="autoComplete.length !==0">
                 <div class="option" v-for="i in autoComplete"
                      @click="setValue(item ? i[item] : i)">
-                    {{item ? i[item] : i}}
+                    {{returnItem(i)}}
                 </div>
             </template>
             <div class="option" v-if="autoComplete.length ===0">
@@ -70,8 +70,11 @@
             }
         },
         methods: {
-            remove(){
-                if(this.readonly){
+            returnItem(i) {
+                return this.item ? i[this.item] : i
+            },
+            remove() {
+                if (this.readonly) {
                     this.$emit('input', '');
                     this.$emit('change', '');
                     this.$refs.input.value = '';
