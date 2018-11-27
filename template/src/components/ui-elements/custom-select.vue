@@ -71,7 +71,11 @@
         },
         methods: {
             returnItem(i) {
-                return this.item ? i[this.item] : i
+                if (this.item) {
+                    return i[this.item]
+                } else {
+                    return i
+                }
             },
             remove() {
                 if (this.readonly) {
