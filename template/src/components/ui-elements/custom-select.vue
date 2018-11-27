@@ -21,7 +21,7 @@
                 <div class="option" v-for="i in autoComplete"
                      @click="setValue(item ? i[item] : i)">
                     <span v-if="item">
-                        {{i[item]}}
+                        {{item}}
                     </span>
                     <span v-else>
                         {{i}}
