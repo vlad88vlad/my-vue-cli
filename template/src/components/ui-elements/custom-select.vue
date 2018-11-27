@@ -20,7 +20,7 @@
             <template v-if="autoComplete.length !==0">
                 <div class="option" v-for="i in autoComplete"
                      @click="setValue(item ? i[item] : i)">
-                    {{item ?i[item] : i}}
+                    {{item ? i[item] : i}}
                 </div>
             </template>
             <div class="option" v-if="autoComplete.length ===0">
