@@ -8,7 +8,7 @@
                 md-label="vue cli">
         </md-empty-state>
 
-
+        <custom-select :options="testSelect" item="a" readonly></custom-select>
         <h2>Material Input</h2>
         <div class="test-input">
 
@@ -49,7 +49,8 @@
         <div style="text-align: center">
             <md-button class="md-raised md-primary" @click="callAlert">call</md-button>
             <md-button class="md-raised md-primary" @click="callAlert"
-                       v-disable="{disable:true,text:'test test test test test test test'}">call</md-button>
+                       v-disable="{disable:true,text:'test test test test test test test'}">call
+            </md-button>
 
         </div>
 
@@ -140,6 +141,7 @@
         }
     };
 
+    import CustomSelect from './ui-elements/custom-select.vue'
     import Popup from './ui-elements/popup.vue'
     import alert from './ui-elements/alert.vue'
     import TopProgress from './ui-elements/top-progress.vue'
@@ -151,10 +153,21 @@
 
     export default {
 
-        components: {Popup, alert, DonutChart, LineChart, BubbleChart, MaterialInput, TopProgress, PopupEvent},
+        components: {
+            Popup,
+            alert,
+            DonutChart,
+            LineChart,
+            BubbleChart,
+            MaterialInput,
+            TopProgress,
+            PopupEvent,
+            CustomSelect
+        },
         name: 'home',
         data() {
             return {
+                testSelect: [{a: 1}, {a: '2'}, {a: 3}],
                 test: '',
                 popupEventParams: {
                     show: false,

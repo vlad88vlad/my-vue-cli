@@ -3,6 +3,7 @@
         <input :id="_uid" type="text" ref="input" v-model="value"
                @change="change"
                @input="input"
+               @keyup.delete="remove"
                :readonly="readonly"
                :class="[value?'active':'',isValid?'':'no-validate']"
 
@@ -18,8 +19,8 @@
         <div class="options">
             <template v-if="autoComplete.length !==0">
                 <div class="option" v-for="i in autoComplete"
-                     @click="setValue(item?i[item]:i)">
-                    {{item?i[item]:i}}
+                     @click="setValue(item ? i[item] : i)">
+                    {{item ?i[item] : i}}
                 </div>
             </template>
             <div class="option" v-if="autoComplete.length ===0">
@@ -57,7 +58,7 @@
             options: {
                 type: Array,
                 default: () => {
-                    return {}
+                    return []
                 }
             },
 
@@ -69,6 +70,14 @@
             }
         },
         methods: {
+            remove(){
+                if(this.readonly){
+                    this.$emit('input', '');
+                    this.$emit('change', '');
+                    this.$refs.input.value = '';
+                    this.value = '';
+                }
+            },
             resetValue() {
                 this.$emit('input', '');
                 this.$emit('change', '');
@@ -99,15 +108,19 @@
             autoComplete() {
                 if (this.item) {
                     return this.options.filter((item) => {
-                        return item[this.item].includes(this.value)
+                        return ("" + item[this.item]).includes(this.value)
+
                     })
                 }
                 else {
                     return this.options.filter((item) => {
-                        return item.includes(this.value)
+                        return ("" + item.includes(this.value))
+
                     })
                 }
+
             }
+
         }
     }
 </script>
@@ -147,12 +160,15 @@
     }
 
     .option {
+        height: 3em;
         background: grey;
-        padding: 5px 0
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
     }
 
     .option:nth-child(odd) {
-        background: #f0f0f0;
+        background: #f5f5f5;
     }
 
     .option:nth-child(even) {
