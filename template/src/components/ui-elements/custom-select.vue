@@ -17,12 +17,12 @@
         </span>
 
         <div class="options">
-            <template v-if="autoComplete.length !==0">
+            <div v-if="autoComplete.length !==0">
                 <div class="option" v-for="i in autoComplete"
                      @click="setValue(item ? i[item] : i)">
                     {{returnItem(i)}}
                 </div>
-            </template>
+            </div>
             <div class="option" v-if="autoComplete.length ===0">
                 not found
             </div>
